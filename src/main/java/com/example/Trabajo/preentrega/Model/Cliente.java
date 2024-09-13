@@ -21,8 +21,6 @@ public class Cliente {
     @Column(name = "NOMBRE")
     private String nombre;
 
-
-
     @Schema(description = "Dirección del cliente", example = "Alvear 692", requiredMode = Schema.RequiredMode.REQUIRED)
     @Column(name = "Dirección")
     private String direccion;
