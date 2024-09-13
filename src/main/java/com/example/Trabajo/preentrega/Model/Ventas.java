@@ -3,6 +3,7 @@ package com.example.Trabajo.preentrega.Model;
 import com.example.Trabajo.preentrega.Repository.RepositoryProductos;
 import com.example.Trabajo.preentrega.Repository.RepositoryProductosVendidos;
 import com.example.Trabajo.preentrega.Repository.RepositoryVentas;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.persistence.*;
 
@@ -30,6 +31,7 @@ public class Ventas {
     @ManyToOne(fetch = FetchType.LAZY)
     @Schema(description = "ID del cliente que realizó la compra", example = "1", accessMode = Schema.AccessMode.READ_ONLY)
     @JoinColumn(name = "idcliente", referencedColumnName = "id")
+    @JsonIgnore
     private Cliente cliente;
 
     @OneToMany (mappedBy = "ventas", cascade = CascadeType.ALL)
