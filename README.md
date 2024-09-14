@@ -65,3 +65,5 @@ A continuación se detalla el funcionamiento de los principales endpoints de la 
     }
 
 (Donde "id" es el ID del producto que compró)
+
+(Cuando la cantidad que se quiera comprar supere el stock que hay, la consola arrojará el error "No hay suficiente stock para el producto")
