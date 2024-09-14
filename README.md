@@ -25,8 +25,7 @@ A continuación se detalla el funcionamiento de los principales endpoints de la 
   - Descripción: Crea un cliente nuevo en la base de datos.
     - Ejemplo:  
     {
-      "nombre":"Nicolas",
-      "apellido":"Panadero",
+      "nombre":"Nicolas Panadero Rivas",
       "direccion":"Calle Java 123",
       "telefono":46455643
       }
